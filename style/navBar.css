@@ -2,15 +2,18 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-
 }
 
 nav .nav--list {
     display: flex;
     margin-left: auto;
+    align-content: center;
 }
 
 nav .nav--list li {
     margin-right: 2.0rem;
     font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

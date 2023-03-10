@@ -1,6 +1,8 @@
 @import "style/font-face.css";
 @import "style/layout.css";
 @import "style/navBar.css";
+@import "style/header.css";
+@import "style/btn.css";
 
 * {
     padding: 0;
@@ -12,6 +14,7 @@
     font-size: 10px;
     --accent-color : rgb(101, 72, 152);
     --primary-color : white;
+    --primary-dark : black;
 }
 
 li {
@@ -33,4 +36,14 @@ body {
 main {
     padding-top: 6.4rem;
     height: 100%;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    /*background-color: aqua;*/
+    bottom: 0;
+    z-index: -1;
+    background-image: url("/assets/image/tafa3.0.png");
 }

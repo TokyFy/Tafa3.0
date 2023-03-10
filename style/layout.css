@@ -2,3 +2,47 @@
     width: 80%;
     margin: 0 auto;
 }
+
+main > .row {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding-top: 6.4rem;
+    flex-grow: 1;
+    display: flex;
+}
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+    height: max-content;
+}
+
+header .header--main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+header .header--main h1 {
+    font-size: 8.2rem;
+}
+
+header .header--main p {
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    margin: 2.4rem 0;
+}
+
+header .header--second  {
+    margin-left: auto;
+}
+
+header .header--second span {
+    font-size: 24.0rem;
+    font-weight: bold;
+}
+
