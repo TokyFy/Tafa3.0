@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Genera;
+    font-weight: normal;
+    src: url("../assets/fonts/Genera Alt Light.ttf");
+}
+
+@font-face {
+    font-family: Genera;
+    font-weight: bold;
+    src: url("../assets/fonts/Genera SemiBold.ttf");
+}
