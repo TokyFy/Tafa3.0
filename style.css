@@ -1,5 +1,4 @@
-@import "style/font-face.css";
-@import "style/layout.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap');@import "style/layout.css";
 @import "style/navBar.css";
 @import "style/header.css";
 @import "style/btn.css";
@@ -15,6 +14,7 @@
     --accent-color : rgb(101, 72, 152);
     --primary-color : white;
     --primary-dark : black;
+    --fontFamily : 'Inter', sans-serif;
 }
 
 li {
@@ -22,7 +22,7 @@ li {
 }
 
 body {
-    font-family: Genera, sans-serif;
+    font-family: var(--fontFamily);
     width: 100vw;
     height: 100vh;
     background: linear-gradient(180deg,
@@ -31,6 +31,7 @@ body {
     rgb(241, 238, 245) 100%) no-repeat;
     color: white;
     font-size: 1.6rem;
+    font-weight: 400;
 }
 
 main {
@@ -40,10 +41,22 @@ main {
 
 .background {
     position: absolute;
-    width: 100%;
-    height: 50%;
-    /*background-color: aqua;*/
+    height: 100vh;
     bottom: 0;
     z-index: -1;
-    background-image: url("/assets/image/tafa3.0.png");
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.background .wrapper {
+    width: 80%;
+    height: max-content;
+    margin: 0 auto;
+}
+
+.background .wrapper img {
+    width: 100%;
+    opacity: 1;
+    transform: scale(1.05);
 }

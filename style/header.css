@@ -1,3 +1,38 @@
-header{
+.Heading {
+    /*padding-top: 3.2rem;*/
+    flex-grow: 1;
+    display: flex;
     height: 100%;
+}
+
+.Heading .wrapper {
+    display: flex;
+    align-items: center;
+    height: max-content;
+}
+
+.Heading .header--main {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Heading .header--main h1 {
+    font-size: 8.2rem;
+}
+
+.Heading .header--main p {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin: 2.4rem 0;
+    font-weight: 500;
+}
+
+.Heading .header--second  {
+    margin-left: auto;
+}
+
+.Heading .header--second span {
+    font-size: 24.0rem;
+    font-weight: bold;
 }
