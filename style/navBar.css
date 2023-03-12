@@ -4,6 +4,17 @@ nav {
     align-items: center;
 }
 
+nav .menu {
+    width: 6.4rem;
+    display: none;
+    margin-left: auto;
+}
+
+nav .menu img {
+    width: 100%;
+    height: auto;
+}
+
 nav .nav--list {
     display: flex;
     margin-left: auto;
@@ -33,4 +44,14 @@ nav .nav--list li:not(.btn):after {
 
 nav .nav--list li:not(.btn):hover:after {
     background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 1024px) {
+    nav .menu {
+        display: block;
+    }
+
+    nav .nav--list {
+       display: none;
+    }
 }
